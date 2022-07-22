@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+ <html lang="en">  
+ <head>  
+   <meta charset="UTF-8">  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>Document</title>  
+  
+   <link rel="stylesheet" href="CSS\Nav2.css">  
+   <link rel="stylesheet" href="CSS\Store.css">
+   <script type="text/javascript" src="JS\Cart.Js"></script>
+   <script type="text/javascript" src="JS\Filter.Js"></script>
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+ </head>  
+ <body> <div class="nav">
+  <nav class="navbar">
+    
+    <div class="logo"><img src="assets\websitelogo.png" height="80px" width="80px"></div>
+  
+    <ul class="nav-links">
+    <div class="menu">
+        <li><a href="/">HOME</a></li>
+        <li><a href="Journey.html">THE JOURNEY</a></li>
+        <li><a href="Team.html">TEAM</a></li>
+        <li><a href="Store.html">STORE</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li></li>
+        <li></li>
+       
+        <li><GAGAN class="fa fa-user-circle" style="font-size:20px "> GAGAN</li>    
+        </div>
+        </ul>
+  </nav>
+</div> 
+    
+    <div id="container">
+ <div id="myBtnContainer" class="myBtnContainer"><br>
+    <h2>Filters  
+        &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-filter" style="font-size:24px"></i></h2><br>
+    <h2>Cost</h2><br><p style="font-size: 20px;">
+     <label><input type="checkbox" name="s-size" value="1500" id="1500" /> Rs: 1500-4000</label><br>
+     <label><input type="checkbox" name="s-size" value="4000" id="4000" /> Rs: 4000-7000</label><br>
+     <label><input type="checkbox" name="s-size" value="7000" id="7000" /> Rs: 7001+</label><br><br>
+    </p>
+
+     <h2>Colour</h2><br><div class="colour">
+     <div class="c2"></div>
+     <div class="c3"></div>
+     <div class="c4"></div>
+     <div class="c5"></div>
+     <div class="c6"></div>
+    </div>
+    <br><br>
+
+     <h2>Design Templates</h2><br>
+     <p style="font-size: 20px;">
+      <label><input type="checkbox" name="design" value="2" id="2" /> 2</label><br>
+      <label><input type="checkbox" name="design" value="3" id="3" /> 3</label><br>
+      <label><input type="checkbox" name="design" value="3" id="3+" /> 3+</label><br><br>
+    </p>
+
+
+     <h2>Cost</h2><br>
+     <p style="font-size: 20px;"><label><input type="checkbox" name="type" value="loafer" id="loafer" /> Loafer</label><br>
+     <label><input type="checkbox" name="type" value="sneaker" id="sneaker" /> Sneaker</label><br></p>
+     <br><br>
+     
+     <center><button type="button" class="apply">Apply</button></center>
+   
+  </div>
+  <div id="Shoes" class="Shoes"><br>
+
+     <h2>SHOES  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-search" style="font-size:25px;"></i><button class="sort"> Sort by </button></h2>
+      <br><br>
+   <div data-id="ksl-01" data-category="1500" class="s1"> 
+       <button onclick="addtocart(item1)" class="button"><img src="assets\shoe.jpg" height="150px" width="190px"><br>
+    <h3>KSL 01</h3>
+    Rs. 2000/-  &nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></button>
+</div>
+   <div data-id="kab-02" data-category="1500 sneaker"  class="s2"><button onclick="addtocart(item2)" class="button"><img src="assets\shoe2.png" height="150px" width="190px"><br>
+    <h3>KAB 02</h3>
+    Rs. 2000/-  &nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></button></div>
+
+    <div data-id="ksl-03" data-category="2000 loafer" class="s3"><button onclick="addtocart(item3)" class="button"><img src="assets\shoe.jpg" height="150px" width="190px"><br>
+    <h3>KSL 03</h3>
+    Rs. 2000/-  &nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></button>
+    </div> <br>
+
+   <div data-id="ksl-04" data-category="4000 2 sneaker" class="s4">  <button onclick="addtocart(item4)" class="button"><img src="assets\shoe.jpg" height="150px" width="190px"><br>
+    <h3>KSL 04</h3>
+    Rs. 2000/-  &nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span></button></div>
+
+   <div data-id="kab-05" data-category="7000 3+" class="s5">  <button onclick="addtocart(item5)" class="button"><img src="assets\shoe2.png" height="150px" width="190px"><br>
+
+    <h3>KAB 05</h3>
+    Rs. 2500/-  &nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked "></span>
+    <span class="fa fa-star checked"></span></button></div>
+
+
+   <div data-id="ksl-06" data-category="4000 sneaker 3" class="s6"><button onclick="addtocart(item6)" class="button"> <img src="assets\shoe.jpg" height="150px" width="190px"><br>
+    <h3>KSL 06</h3>
+    Rs. 3000/-  &nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></button>
+  </div></div>
+  <div class="cart" id="cart"><br>
+    <h2>Cart &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+    <i class="fa fa-shopping-bag" style="font-size:25px"></i></h2>
+    <div class="title"></div>
+    <br><br><br><br><br><br><br><br><br><br>
+    What's Stopping you,designer?
+    
+    <br><br><br>
+    <br>
+   <center> <div class="SortBy"><center><button type="button" class="OrderNow">Order now</button></center></div> </center>
+   <br>  <br>
+</div>
+</div>
+</body>
+</html>
+
+ 
+
+   
